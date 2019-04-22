@@ -1,1 +1,40 @@
-JavaScript (/ˈdʒɑːvəˌskrɪpt/[6]), often abbreviated as JS, is a high-level, dynamic, weakly typed, prototype-based, multi-paradigm, and interpreted programming language. Alongside HTML and CSS, JavaScript is one of the three core technologies of World Wide Web content production. It is used to make webpages interactive and provide online programs, including video games. The majority of websites employ it, and all modern web browsers support it without the need for plug-ins by means of a built-in JavaScript engine. Each of the many JavaScript engines represent a different implementation of JavaScript, all based on the ECMAScript specification, with some engines not supporting the spec fully, and with many engines supporting additional features beyond ECMA.
+JavaScript객체의 형태
+<br>
+Object   vs    Array  --------------------------------<br>
+array<br>
+var members = ['egoing','k8805','hoya'];<br>
+console.log(members[1]);<br>
+<br>
+object<br>
+var roles = {<br>
+  'programmer' : 'egoing',<br>
+  'designer' : 'k8805',<br>
+  'manager' :'hoya'<br>
+}<br>
+console.log(roles.designer);<br>
+
+-------------------------------------------------------<br>
+
+JavaScript객체 - 반복 <br>
+<br>
+var members = ['egoing','k8805','hoya'];<br>
+console.log(members[1]);<br>
+<br>
+var  i = 0;<br>
+while(i < members.length){<br>
+  console.log('array loop', members[i]);<br>
+  i += 1;<br>
+}<br>
+<br>
+var roles = {<br>
+  'programmer' : 'egoing',<br>
+  'designer' : 'k8805',<br>
+  'manager' :'hoya'<br>
+}<br>
+console.log(roles.designer);<br>
+<br>
+for(var n in roles){<br>
+  console.log('object =>',n, 'value =>', roles[n]);<br>
+}<br>
+<br>
+-------------------------------------------------------<br>
